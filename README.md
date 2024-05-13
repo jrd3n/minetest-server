@@ -2,9 +2,9 @@
 
 This is a simple way to start you own minetest aws capture the flag server.
 
-> [!Todo]
-> - [ ] Test the script
-> - [ ] Automate some sort of corntab job so it starts on reboot
+this will install minetest, and the game capture the flag, then add the minetest server to crontab.
+
+on reboot the server will be up and running.
 
 ## Install
 

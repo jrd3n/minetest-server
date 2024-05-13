@@ -28,5 +28,9 @@ touch ~/.minetest/minetest.conf
 
 curl -o ~/.minetest/minetest.conf https://raw.githubusercontent.com/jrd3n/minetest-server/main/minetest.conf
 
+(crontab -l 2>/dev/null; echo "@reboot minetest --server --config ~/.minetest/minetest.conf --worldname CTF_world") | crontab -
+
+sudo reboot -n
+
 # Start the Minetest server
-minetest --server --config ~/.minetest/minetest.conf --worldname CTF_world
+# minetest --server --config ~/.minetest/minetest.conf --worldname CTF_world
